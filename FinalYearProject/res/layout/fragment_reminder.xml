@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_reminder"
+    >
+    
+    <LinearLayout      
+     android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"   
+       android:id="@+id/nameLayout">
+      <TextView
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:text="@string/Name"/>    
+      <EditText
+          android:id="@+id/nameEditText"
+          android:hint="@string/hint_name"                
+          android:layout_height="45dp"           
+          android:layout_width="200dp" />     
+    </LinearLayout>    
+ <LinearLayout    
+     android:layout_marginTop="20dp"  
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"   
+       android:id="@+id/descLayout"
+       android:layout_below="@id/nameLayout">
+      <TextView
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:text="@string/Desc"/>    
+      <EditText
+          android:id="@+id/DescEditText"
+          android:hint="@string/hint_description"            
+          android:layout_height="45dp"           
+          android:layout_width="200dp" />     
+    </LinearLayout>      
+ <LinearLayout 
+     android:layout_marginTop="20dp"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_below="@id/descLayout"    
+     android:gravity="center_horizontal"
+     >     
+  <Button 
+      android:id="@+id/dateButton"
+      android:layout_width="100sp"
+      android:layout_height="wrap_content"
+      android:text="@string/Date" 
+      android:onClick="@string/DateClick"
+      />  
+     <Button 
+         android:id="@+id/timeButton"
+      android:layout_width="100sp"
+       android:layout_height="wrap_content"
+      android:text="@string/Time"
+      android:onClick="@string/Timeclick"/>
+     <Button 
+         android:id="@+id/reminderButton"
+      android:layout_width="100sp"
+      android:layout_height="wrap_content"
+      android:text="@string/Reminder"
+      android:onClick="@string/ReminderClick"/>   
+ </LinearLayout>
+
+</RelativeLayout>
